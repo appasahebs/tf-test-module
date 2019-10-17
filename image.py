@@ -29,7 +29,7 @@ def image():
     query = json.loads(sys.stdin.read())
     namespace = get_parameter(query, 'namespace')
     sys.stdout.write(json.dumps({
-        'namespace': namespace
+        'namespace': namespace + " returned from module"
     }))
 
 if __name__ == '__main__':
