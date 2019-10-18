@@ -10,6 +10,9 @@ if (sys.version_info > (3, 0)):
 else:
     import urllib2 as urllib
 
+from pyhelm.chartbuilder import ChartBuilder
+from pyhelm.tiller import Tiller
+
 credentials = None
 
 def error(message):
