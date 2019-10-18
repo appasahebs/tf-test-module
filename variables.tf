@@ -4,4 +4,9 @@ variable "namespace" {
   default = ""
 }
 
+variable "version" {
+  description = "Namespace of chart."
+  default = ""
+}
+
 
