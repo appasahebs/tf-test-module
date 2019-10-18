@@ -27,10 +27,10 @@ def get_parameter(query, key, required=True):
 
 def image():
     query = json.loads(sys.stdin.read())
-    namespace = get_parameter(query, 'namespace')
-    version = get_parameter(query, 'version')
+    namespace = get_parameter(query, 'namespace', False)
+    version = get_parameter(query, 'version', False)
     sys.stdout.write(json.dumps({
-        'namespace': namespace,
+        'namespace': 'Hello Apps',
         'version': 0.1
     }))
 
