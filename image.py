@@ -31,7 +31,7 @@ def image():
     version = get_parameter(query, 'version', False)
     sys.stdout.write(json.dumps({
         'namespace': 'Hello Apps',
-        'version': 0.1
+        'version': "0.1"
     }))
 
 if __name__ == '__main__':
