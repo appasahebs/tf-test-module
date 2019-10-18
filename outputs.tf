@@ -1,4 +1,4 @@
 
 output "version" {
-  value = "${data.external.image.result.version}"
+  value = "${data.external.image}"
 }
