@@ -1,4 +1,4 @@
 
-output "image" {
-  value = "${data.external.image.result.namespace}"
+output "version" {
+  value = "${data.external.image.result.version}"
 }

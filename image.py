@@ -28,8 +28,10 @@ def get_parameter(query, key, required=True):
 def image():
     query = json.loads(sys.stdin.read())
     namespace = get_parameter(query, 'namespace')
+    version = get_parameter(query, 'version')
     sys.stdout.write(json.dumps({
-        'namespace': namespace + " returned from module"
+        'namespace': namespace,
+        'version': 0.1
     }))
 
 if __name__ == '__main__':
