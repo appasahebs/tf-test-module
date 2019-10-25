@@ -33,8 +33,8 @@ def image():
     namespace = get_parameter(query, 'namespace', False)
     version = get_parameter(query, 'version', False)
 
-    chart = ChartBuilder({'name': 'blue-green-app', 'source': {'type': 'directory', 'location': '../blue-green-app'}})
-    chart.install_release(chart.get_helm_chart(), dry_run=False, namespace='default')
+    #chart = ChartBuilder({'name': 'blue-green-app', 'source': {'type': 'directory', 'location': '../blue-green-app'}})
+    #chart.install_release(chart.get_helm_chart(), dry_run=False, namespace='default')
 
     sys.stdout.write(json.dumps({
         'namespace': 'Hello Apps',
